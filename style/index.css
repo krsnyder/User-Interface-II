@@ -1,1 +1,105 @@
-/* Add CSS styling here */
+* {
+    font-family: 'Libre Baskerville', serif;
+    /* background-color: rgb(31, 31, 31) */
+}
+
+body {
+    position: relative;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+nav {
+    position: absolute;
+    top: 0%;
+    border: 1px solid black;
+}
+#header {
+    width: 100vw;
+    height: 40vh;
+    margin: auto;
+    border: 1px solid black;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+
+}
+
+#gallery {
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: row wrap;
+    border: 1px solid black;
+}
+
+#gallery a button{
+    /* width: 20vw; */
+    background-color: rgba(51, 170, 51, 0) ;
+    /* border: none; */
+}
+
+#gallery a {
+    width: 20vw;
+    height: 20vw;
+    /* margin: 2%; */
+}
+
+button img {
+    width: 20vw;
+    height: 20vw;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projects img {
+    width: 35vw;
+}
+
+#projects div {
+    margin: 2%;
+    border: 1px solid black;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+.image {
+    padding: 10px;
+}
+
+#content-wrap {
+    padding-bottom:10rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(36, 36, 36, 0.856) ;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
