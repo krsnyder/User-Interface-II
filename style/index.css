@@ -11,13 +11,35 @@ body {
     /* align-items: center; */
 }
 
+/* Giving room for the Header & Footer */
+#content-wrap { 
+    padding-bottom:10rem;
+    padding-top: 5rem;
+}
+
 nav {
     position: absolute;
     top: 0%;
+    width: 100vw;
+    height: 5rem;
     border: 1px solid black;
+    margin-bottom: 2%;
+    align-items: center;
+
+}
+
+#logo {
+    font-size: 4rem;
+    /* background-color: black;
+    color: grey; */
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
 }
 #header {
-    width: 100vw;
+    width: 90vw;
     height: 40vh;
     margin: auto;
     border: 1px solid black;
@@ -31,7 +53,7 @@ h1 {
 
 #gallery {
     width: 90vw;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -40,21 +62,16 @@ h1 {
     border: 1px solid black;
 }
 
-#gallery a button{
-    /* width: 20vw; */
-    background-color: rgba(51, 170, 51, 0) ;
-    /* border: none; */
-}
-
 #gallery a {
     width: 20vw;
     height: 20vw;
-    /* margin: 2%; */
+    margin: 2%;
 }
 
-button img {
+#gallery img {
     width: 20vw;
     height: 20vw;
+
 }
 
 #projects {
@@ -81,15 +98,11 @@ button img {
     padding: 10px;
 }
 
-#content-wrap {
-    padding-bottom:10rem;
-}
-
 #footer {
     position: absolute;
     bottom: 0;
     height: 10rem;
-    width: 100vw;
+    width: 98vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
