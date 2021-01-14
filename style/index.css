@@ -36,7 +36,6 @@ nav {
     height: 5rem;
     margin-bottom: 2%;
     align-items: center;
-
 }
 
 nav div {
@@ -46,6 +45,11 @@ nav div {
 .navbar { 
     border: 1px solid #ffd369;
     border-radius: 10px;
+}
+
+.navbar:hover {
+    scale: 1.125;
+    cursor: pointer;
 }
 
 #header {
@@ -61,7 +65,9 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     text-decoration: underline;
-    font-size: 6rem;
+    font-size: 10vh;
+    margin: auto;
+    text-align: center;
 }
 
 #gallery {
@@ -83,7 +89,15 @@ h1 {
 #gallery img {
     width: 20vw;
     height: 20vw;
-    border-radius: 85px;   
+    border-radius: 85px;
+    border: 1px #eeeeee solid;
+    box-shadow: 0 12px 12px -6px black;
+}
+
+#gallery img:hover{
+    box-shadow: 0 12px 18px -10px black;
+    border: 5px #eeeeee solid;
+    transform: scale(1.025);
 }
 
 #projects {
@@ -107,22 +121,52 @@ h1 {
 }
 .image {
     padding: 10px;
+    border: 10px #eeeeee solid;
+    
 }
 
 #footer {
     position: absolute;
     bottom: 0;
     height: 10rem;
-    width: 98vw;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #222831 ;
+    border: 1px solid #ffd369;
 }
 
+#contact-me {
+    border: 1px solid #ffd369;
+    border-radius: 10px;
+    scale: 2;
+}
 
+#contact-me:hover{
+    scale: 3;
+    cursor: pointer;
+}
 
+#contact {
+    width: 50vw;
+    height: 25vh;
+    margin: 15vh auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    border: 10px solid #ffd369;
+    align-items: center;
+    justify-content: space-around;
+}
 
+#contact a{
+    background-color: #222831;
+    font-size: 3vh;
+}
 
-
-
+#contact p{
+    background-color: #222831;
+    font-size: 2vh;
+}
+    
