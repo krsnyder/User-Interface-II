@@ -53,8 +53,8 @@ nav div {
 }
 
 #header {
-    width: 90vw;
-    height: 40vh;
+    width: 100vw;
+    height: auto;
     margin: auto;
     display: flex;
     align-items: center;
@@ -62,19 +62,25 @@ nav div {
 }
 
 h1 {
+    box-sizing: border-box;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     text-decoration: underline;
     font-size: 10vh;
     margin: auto;
     text-align: center;
+    transition: color 2s ease;
+}
+
+h1:hover {
+    color: #222831;;
 }
 
 #gallery {
     width: 90vw;
     height: 80vh;
     display: flex;
-    margin: auto;
+    margin: 100px auto;
     justify-content: space-around;
     align-content: center;
     flex-flow: row wrap;
