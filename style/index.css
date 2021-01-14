@@ -1,6 +1,7 @@
 * {
     font-family: 'Libre Baskerville', serif;
-    /* background-color: rgb(31, 31, 31) */
+    background-color: #393e46;
+    color: #ffd369;
 }
 
 body {
@@ -17,38 +18,50 @@ body {
     padding-top: 5rem;
 }
 
+#top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222831;
+}
+
+#logo p{
+    font-size: 3rem;
+    background-color: #222831;
+}
+
 nav {
     position: absolute;
     top: 0%;
     width: 100vw;
     height: 5rem;
-    border: 1px solid black;
     margin-bottom: 2%;
     align-items: center;
 
 }
 
-#logo {
-    font-size: 4rem;
-    /* background-color: black;
-    color: grey; */
+nav div {
+    background-color: #222831;
 }
 
-#top {
-    display: flex;
-    justify-content: space-between;
+.navbar { 
+    border: 1px solid #ffd369;
+    border-radius: 10px;
 }
+
 #header {
     width: 90vw;
     height: 40vh;
     margin: auto;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-
+    text-decoration: underline;
+    font-size: 6rem;
 }
 
 #gallery {
@@ -59,7 +72,6 @@ h1 {
     justify-content: space-around;
     align-content: center;
     flex-flow: row wrap;
-    border: 1px solid black;
 }
 
 #gallery a {
@@ -71,7 +83,7 @@ h1 {
 #gallery img {
     width: 20vw;
     height: 20vw;
-
+    border-radius: 85px;   
 }
 
 #projects {
@@ -87,7 +99,6 @@ h1 {
 
 #projects div {
     margin: 2%;
-    border: 1px solid black;
 }
 
 .title {
@@ -106,8 +117,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(36, 36, 36, 0.856) ;
-    border: 1px solid black;
+    background-color: #222831 ;
 }
 
 
