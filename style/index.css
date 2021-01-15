@@ -6,16 +6,14 @@
 
 body {
     position: relative;
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 /* Giving room for the Header & Footer */
 #content-wrap { 
-    padding-bottom:10rem;
-    padding-top: 5rem;
+    padding-bottom:11vw;
+    padding-top: 7vw;
 }
 
 #top {
@@ -26,7 +24,7 @@ body {
 }
 
 #logo p{
-    font-size: 3rem;
+    font-size: 2.5vw;
     background-color: #222831;
 }
 
@@ -34,9 +32,11 @@ nav {
     position: absolute;
     top: 0%;
     width: 100%;
-    height: 5rem;
+    height: 7vw;
     margin-bottom: 2%;
     align-items: center;
+    background-color: #222831;
+    background-color: #222831;
 }
 
 nav div {
@@ -46,6 +46,8 @@ nav div {
 .navbar { 
     border: 1px solid #ffd369;
     border-radius: 10px;
+    font-size: 2vw;
+    background-color: #222831;
 }
 
 .navbar:hover {
@@ -67,7 +69,7 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     text-decoration: underline;
-    font-size: 10vh;
+    font-size: 6vw;
     margin: auto;
     text-align: center;
     transition: color 2s ease;
@@ -134,7 +136,7 @@ h1:hover {
 #footer {
     position: absolute;
     bottom: 0;
-    height: 10rem;
+    height: 11vw;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -152,12 +154,13 @@ h1:hover {
 .fab {
     color: #ffd369;
     background-color: #222831;
-    font-size: 10vh;
+    font-size: 7vw;
 }
 #contact-me {
     border: 1px solid #ffd369;
     border-radius: 10px;
-    scale: 2;
+    font-size: 3vw;
+    /* scale: 10vw; */
 }
 
 #contact-me:hover{
