@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #222831;
+    border-bottom: 1px solid #ffd369;
 }
 
 #logo p{
@@ -32,7 +33,7 @@ body {
 nav {
     position: absolute;
     top: 0%;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     margin-bottom: 2%;
     align-items: center;
@@ -96,7 +97,7 @@ h1:hover {
     width: 20vw;
     height: 20vw;
     border-radius: 85px;
-    border: 1px #eeeeee solid;
+    border: 3px #eeeeee solid;
     box-shadow: 0 12px 12px -6px black;
 }
 
@@ -127,8 +128,7 @@ h1:hover {
 }
 .image {
     padding: 10px;
-    border: 10px #eeeeee solid;
-    
+    border: 10px #eeeeee solid;   
 }
 
 #footer {
@@ -143,6 +143,17 @@ h1:hover {
     border: 1px solid #ffd369;
 }
 
+#social {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    background-color: #222831;
+}
+.fab {
+    color: #ffd369;
+    background-color: #222831;
+    font-size: 10vh;
+}
 #contact-me {
     border: 1px solid #ffd369;
     border-radius: 10px;
