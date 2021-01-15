@@ -1,64 +1,63 @@
 * {
     font-family: 'Libre Baskerville', serif;
-    background-color: #393e46;
     color: #ffd369;
 }
 
 body {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    background-color: #393e46;
 }
 
 /* Giving room for the Header & Footer */
 #content-wrap { 
+    display: flex;
+    flex-direction: column;
     padding-bottom:11vw;
     padding-top: 7vw;
+    width: 100%;
 }
 
 #top {
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 7vw;
+    margin: 0vw 0vw 2vw;
     background-color: #222831;
     border-bottom: 1px solid #ffd369;
 }
 
-#logo p{
-    font-size: 2.5vw;
-    background-color: #222831;
-}
-
-nav {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 7vw;
-    margin-bottom: 2%;
-    align-items: center;
-    background-color: #222831;
-    background-color: #222831;
-}
-
 nav div {
-    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    height: 7vw;
 }
 
-.navbar { 
+#logo p{
+    font-size: 3vw;
+}
+
+.menu-items { 
     border: 1px solid #ffd369;
+    background-color: #222831;
     border-radius: 10px;
     font-size: 2vw;
-    background-color: #222831;
+    transition: color 0.25s ease;
 }
 
-.navbar:hover {
+.menu-items:hover {
     scale: 1.125;
     cursor: pointer;
+    color: #eeeeee;
+    border-color: #eeeeee;
 }
 
 #header {
     width: 100vw;
     height: auto;
-    margin: auto;
+    margin: 5vw auto auto auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +68,7 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     text-decoration: underline;
-    font-size: 6vw;
+    font-size: 4vw;
     margin: auto;
     text-align: center;
     transition: color 2s ease;
@@ -81,9 +80,9 @@ h1:hover {
 
 #gallery {
     width: 90vw;
-    height: 80vh;
+    height: auto;
     display: flex;
-    margin: 100px auto;
+    margin: 10% auto;
     justify-content: space-around;
     align-content: center;
     flex-flow: row wrap;
@@ -99,7 +98,7 @@ h1:hover {
     width: 20vw;
     height: 20vw;
     border-radius: 85px;
-    border: 3px #eeeeee solid;
+    border: 3px #ffd369 solid;
     box-shadow: 0 12px 12px -6px black;
 }
 
@@ -154,23 +153,34 @@ h1:hover {
 .fab {
     color: #ffd369;
     background-color: #222831;
-    font-size: 7vw;
+    font-size: 4vw;
+    transition: color 0.25s ease;
+}
+
+.fab:hover {
+    scale: 1.1;
+    color: #eeeeee;
 }
 #contact-me {
     border: 1px solid #ffd369;
+    background-color: #222831;
     border-radius: 10px;
     font-size: 3vw;
+    transition: color 0.25s ease;
     /* scale: 10vw; */
 }
 
 #contact-me:hover{
-    scale: 3;
+    scale: 1.1;
+    color: #eeeeee;
+    border-color: #eeeeee;
     cursor: pointer;
 }
 
 #contact {
     width: 50vw;
-    height: 25vh;
+    height: 30vw;
+    font-size: 2vw;
     margin: 15vh auto;
     display: flex;
     flex-direction: column;
@@ -182,11 +192,5 @@ h1:hover {
 
 #contact a{
     background-color: #222831;
-    font-size: 3vh;
+    font-size: 1.5vw;
 }
-
-#contact p{
-    background-color: #222831;
-    font-size: 2vh;
-}
-    
