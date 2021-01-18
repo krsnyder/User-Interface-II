@@ -191,21 +191,26 @@ h1:hover {
 }
 
 #contact {
+    display:flex;
+    justify-content: space-between;
     width: 50vw;
-    height: 30vw;
+    height: auto;
     font-size: 2vw;
     margin: 15vh auto;
-    display: flex;
-    flex-direction: column;
     background-color: #222831;
-    border: 10px solid #ffd369;
-    align-items: center;
-    justify-content: space-around;
+    border: 1vw solid #ffd369;
+    text-align: center;
+}
+
+#contact p {
+    margin-top: 5vw;
+    height: 100%;
 }
 
 #contact a{
     background-color: #222831;
     font-size: 1.5vw;
+    margin: auto;
 }
 
 /* Media breakpoint for tablet screens */
@@ -278,6 +283,14 @@ h1:hover {
     }
     .fab {
         font-size: 8vw;
+    }
+
+    #contact {
+        width: auto;
+    }
+    #contact p, #contact a{
+        font-size: 4vw;
+        margin: 10px;
     }
 }
 
