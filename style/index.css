@@ -29,16 +29,23 @@ body {
 
 nav div {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin-left: 2vw;
     height: 7vw;
+}
+
+#logo {
+    margin: 0;
+    height: auto;
 }
 
 #logo p{
     font-size: 3vw;
 }
 
+#navigation {
+    height: auto;
+}
 .menu-items { 
     border: 1px solid #ffd369;
     background-color: #222831;
@@ -194,3 +201,91 @@ h1:hover {
     background-color: #222831;
     font-size: 1.5vw;
 }
+
+/* Media breakpoint for phone screens */
+@media screen and (max-width: 500px) {
+    #content-wrap {
+        padding-bottom:40vw;
+        padding-top: 80vw;
+    }
+    #top {
+        flex-direction: column;
+        height: 85vw;
+        margin: 0vw 0vw 2vw;
+    }
+    nav div {
+        flex-direction: column;
+        height: auto;
+    }
+    #navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 100%;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #ffd369;
+    }
+    #logo p{
+        font-size: 10vw;
+        margin-top: auto;
+        width: 100%;
+        color: #222831;
+        background-color: #eeeeee;
+    }
+    .menu-items {
+        font-size: 10vw;
+        margin: 2px;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+}
+
+/* Media breakpoint for tablet screens */
+@media screen and (max-width: 800px) {
+
+    #content-wrap {
+        padding-bottom:40vw;
+        padding-top: 80vw;
+    }
+    #top {
+        flex-direction: column;
+        height: 85vw;
+        margin: 0vw 0vw 2vw;
+    }
+    nav div {
+        flex-direction: column;
+        height: auto;
+    }
+    #navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 100%;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #ffd369;
+    }
+    #logo p{
+        font-size: 10vw;
+        margin-top: auto;
+        width: 100%;
+        color: #222831;
+        background-color: #eeeeee;
+    }
+    .menu-items {
+        font-size: 10vw;
+        margin: 2px;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+}
+
+
+
+
