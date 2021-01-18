@@ -14,8 +14,8 @@ body {
 #content-wrap {
     display: flex;
     flex-direction: column;
-    padding-bottom:11vw;
-    padding-top: 7vw;
+    padding-top: 80vw; 
+    padding-bottom:50vw;
     width: 100%;
 }
 
@@ -23,8 +23,10 @@ body {
     position: absolute;
     top: 0%;
     width: 100vw;
-    height: 7vw;
-    margin-bottom: 2vw;
+    height: 85vw;
+    margin: 0vw 0vw 2vw;
+    /* height: 7vw; */
+    /* margin-bottom: 2vw; */
     background-color: #222831;
 }
 
@@ -32,26 +34,39 @@ nav div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vw;
+    flex-direction: column;
+    height: auto;
+    /* height: 7vw; */
 }
 
 #logo {
+    width: 100%;
     margin: 0;
     height: auto;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ffd369;
 }
 
 #logo p{
-    font-size: 3vw;
+    font-size: 10vw;      
+    margin-top: auto;
+    width: 100%;
+    color: #222831;
+    background-color: #eeeeee;
 }
 
 #navigation {
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
+
 .menu-items { 
     border: 1px solid #ffd369;
     background-color: #222831;
     border-radius: 10px;
-    font-size: 2vw;
+    font-size: 10vw;
+    margin: 2px;
     transition: color 0.25s ease;
 }
 
@@ -80,7 +95,7 @@ h1 {
     text-decoration: underline;
     color: #eeeeee;
     background-color: rgba(0, 0, 0, 0.411);
-    font-size: 4vw;
+    font-size: 10vw;
     margin: auto;
     text-align: center;
     transition: color 2s ease;
@@ -94,22 +109,23 @@ h1:hover {
     width: 100%;
     height: auto;
     display: flex;
-    margin: 5% auto;
+    margin: 5% 0;
+    margin-left: 45px;
     justify-content: space-around;
     align-content: center;
-    flex-flow: row wrap;
+    flex-direction: column;
 }
 
 #gallery a {
-    margin: 2%;
-    width: 30vw;
-    height: 30vw;
+    margin: 10%;
+    width: 60vw;
+    height: auto;
 }
 
 #gallery img {
-    width: 100%;
+    width: 60vw;
     height: auto;
-    border-radius: 85px;
+    border-radius: 50%;
     border: 3px #ffd369 solid;
     box-shadow: 0 12px 12px -6px black;
 }
@@ -136,9 +152,9 @@ h1:hover {
     text-align: center;
 }
 .image {
-    width: 35vw;
+    width: 80vw;
     padding: 10px;
-    border: 10px #eeeeee solid;   
+    border: 2px #eeeeee solid;   
 }
 
 #footer {
@@ -146,10 +162,11 @@ h1:hover {
     padding-left: 5vw;
     padding-right: 5vw;
     bottom: 0;
-    height: 11vw;
+    height: auto;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: #222831 ;
     border: 1px solid #ffd369;
@@ -157,14 +174,15 @@ h1:hover {
 
 #social {
     display: flex;
-    justify-content: space-between;
-    width: 15vw;
+    justify-content: space-around;
+    width: 80vw;
     background-color: #222831;
 }
 .fab {
     color: #ffd369;
     background-color: #222831;
-    font-size: 4vw;
+    font-size: 15vw;
+    margin: 10px;
     transition: color 0.25s ease;
 }
 
@@ -176,7 +194,8 @@ h1:hover {
     border: 1px solid #ffd369;
     background-color: #222831;
     border-radius: 10px;
-    font-size: 3vw;
+    font-size: 9vw;
+    margin: 10px;
     transition: color 0.25s ease;
     /* scale: 10vw; */
 }
@@ -191,7 +210,7 @@ h1:hover {
 #contact {
     display:flex;
     justify-content: space-between;
-    width: 50vw;
+    width: auto;
     height: auto;
     font-size: 2vw;
     margin: 15vh auto;
@@ -201,42 +220,36 @@ h1:hover {
 }
 
 #contact p {
-    margin-top: 5vw;
+    font-size: 4vw;
+    margin: 10px;
     height: 100%;
 }
 
 #contact a{
     background-color: #222831;
-    font-size: 1.5vw;
-    margin: auto;
+    font-size: 4vw;
+    margin: 10px;
 }
 
-/* Media breakpoint for tablet screens */
-@media screen and (max-width: 800px) {
 
-    #content-wrap {
-        padding-top: 80vw;
-        padding-bottom:30vw;
-    }
+/* Media breakpoint for tablet screens */
+@media screen and (min-width: 500px) {
+
+    #content-wrap {padding-top: 80vw; padding-bottom:30vw;}
+
     #top {
-        flex-direction: column;
         height: 85vw;
         margin: 0vw 0vw 2vw;
     }
-    nav div {
-        flex-direction: column;
-        height: auto;
-    }
-    #navigation {
-        display: flex;
-        flex-direction: column;
-    }
+
+    nav div {flex-direction: column; height: auto;}
 
     #logo {
         width: 100%;
         margin-bottom: 5px;
         border-bottom: 2px solid #ffd369;
     }
+
     #logo p{
         font-size: 10vw;
         margin-top: auto;
@@ -244,16 +257,14 @@ h1:hover {
         color: #222831;
         background-color: #eeeeee;
     }
-    .menu-items {
-        font-size: 10vw;
-        margin: 2px;
-    }
-    h1 {
-        font-size: 10vw;
-    }
+
+    .menu-items {font-size: 10vw; margin: 2px;}
+
+    h1 {font-size: 10vw;}
+
     #gallery {
-        flex-flow: row wrap;
-    }
+        margin-left: 0px;
+        flex-flow: row wrap;}
     
     #gallery a {
         width: 35vw;
@@ -266,82 +277,119 @@ h1:hover {
     }
 
     #footer {
-        width: 100vw;
-        height: auto;
         font-size: 10vw;
         justify-content: space-between;
     }
 
-    #contact-me {
-        font-size: 7vw;
-    }
+    #contact-me {font-size: 7vw;}
 
-    #social {
-        width: 30vw;
-    }
-    .fab {
-        font-size: 8vw;
-    }
+    #social {width: 30vw;}
 
-    #contact {
-        width: auto;
-    }
-    #contact p, #contact a{
-        font-size: 4vw;
-        margin: 10px;
-    }
+    .fab {font-size: 8vw;}
+
+    #contact {width: auto;}
+
+    #contact p, #contact a {font-size: 4vw; margin: 10px;}
+
     .image {
         width: 60vw;
         padding: 10px;
         border: 5px #eeeeee solid;   
     }
-    
 }
 
 /* Media breakpoint for phone screens */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 801px) {
 
-    #gallery {
-        flex-direction: column;
+    body {
+        overflow-x: hidden;
+    }
+    #content-wrap {
+        padding-bottom:11vw; 
+        padding-top: 7vw;
     }
     
-    #gallery a {
-        width: 60vw;
-        margin: 10%;
+    #top {
+        flex-direction: row;
+        height: 7vw;
+        margin: 0;
     }
+
+    nav div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vw;
+    }
+
+    #logo {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        border: none;
+    }
+
+    #logo p{
+        font-size: 3vw;
+        margin-top: auto;
+        width: 100%;
+        color: #ffd369;
+        background-color: #222831;
+    }
+
+    #navigation {flex-direction: row;}
+
+    .menu-items {font-size: 2vw;}
     
-    #gallery img {
-        width: 60vw;
-        border-radius: 50%;
-    }    
+    #header { 
+        margin-top: auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    #gallery {flex-flow: row wrap;}
+    
+    #gallery a {width: 30vw; height: 30vw; margin: 2%;}
+    
+    #gallery img {width: 100%; border-radius: 85px;}    
 
     #footer {
-        flex-direction: column;
-    }
-
-    #social {
-        width: 80vw;
+        position: absolute;
+        bottom: 0;
+        flex-direction: row;
+        height: 11vw;
+        font-size: 3vw;
+        flex-direction: row;
         justify-content: space-around;
     }
 
+    #social {
+        height: 4vw;
+        width: 15vw; 
+        justify-content: space-between;}
+
     .fab {
-        font-size: 15vw;
-        margin: 10px;
+        font-size: 4vw;
+        margin: 0;
+        height: 4vw;
     }
+
 
     #contact-me {
-        font-size: 9vw;
-        margin: 10px;
+        height: 4vw;
+        font-size: 3vw; 
+        vertical-align: middle;
+        margin: 0;
     }
 
-    #contact p, #contact a{
-        font-size: 4vw;
-        margin: 10px;
-    }
+    #contact p, #contact a {font-size: 4vw; margin: 10px;}
+    
     .image {
-        width: 80vw;
+        width: 35vw;
         padding: 10px;
-        border: 2px #eeeeee solid;   
+        border: 10px #eeeeee solid;   
     }
 }
 
