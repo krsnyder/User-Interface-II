@@ -1,1 +1,351 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    color: #ffd369;
+}
+
+body {
+    position: relative;
+    background-color: #393e46;
+    overflow-x: hidden;
+}
+
+/* Giving room for the Header & Footer */
+#content-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:11vw;
+    padding-top: 7vw;
+    width: 100%;
+}
+
+#top {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 7vw;
+    margin-bottom: 2vw;
+    background-color: #222831;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vw;
+}
+
+#logo {
+    margin: 0;
+    height: auto;
+}
+
+#logo p{
+    font-size: 3vw;
+}
+
+#navigation {
+    height: auto;
+}
+.menu-items { 
+    border: 1px solid #ffd369;
+    background-color: #222831;
+    border-radius: 10px;
+    font-size: 2vw;
+    transition: color 0.25s ease;
+}
+
+.menu-items:hover {
+    scale: 1.125;
+    cursor: pointer;
+    color: #eeeeee;
+    border-color: #eeeeee;
+}
+
+#header {
+    background-image: url("/photos/winter.jpg");
+    width: 100vw;
+    height: auto;
+    margin: 5vw auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffd369;
+    border-bottom: 1px solid #ffd369;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #eeeeee;
+    background-color: rgba(0, 0, 0, 0.411);
+    font-size: 4vw;
+    margin: auto;
+    text-align: center;
+    transition: color 2s ease;
+}
+
+h1:hover {
+    color: #222831;;
+}
+
+#gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 5% auto;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+#gallery a {
+    margin: 2%;
+    width: 30vw;
+    height: 30vw;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 85px;
+    border: 3px #ffd369 solid;
+    box-shadow: 0 12px 12px -6px black;
+}
+
+#gallery img:hover{
+    box-shadow: 0 12px 18px -10px black;
+    border: 5px #eeeeee solid;
+    transform: scale(1.025);
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projects div {
+    margin: 2%;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+.image {
+    width: 35vw;
+    padding: 10px;
+    border: 10px #eeeeee solid;   
+}
+
+#footer {
+    position: absolute;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    bottom: 0;
+    height: 11vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222831 ;
+    border: 1px solid #ffd369;
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    background-color: #222831;
+}
+.fab {
+    color: #ffd369;
+    background-color: #222831;
+    font-size: 4vw;
+    transition: color 0.25s ease;
+}
+
+.fab:hover {
+    scale: 1.1;
+    color: #eeeeee;
+}
+#contact-me {
+    border: 1px solid #ffd369;
+    background-color: #222831;
+    border-radius: 10px;
+    font-size: 3vw;
+    transition: color 0.25s ease;
+    /* scale: 10vw; */
+}
+
+#contact-me:hover{
+    scale: 1.1;
+    color: #eeeeee;
+    border-color: #eeeeee;
+    cursor: pointer;
+}
+
+#contact {
+    display:flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: auto;
+    font-size: 2vw;
+    margin: 15vh auto;
+    background-color: #222831;
+    border: 1vw solid #ffd369;
+    text-align: center;
+}
+
+#contact p {
+    margin-top: 5vw;
+    height: 100%;
+}
+
+#contact a{
+    background-color: #222831;
+    font-size: 1.5vw;
+    margin: auto;
+}
+
+/* Media breakpoint for tablet screens */
+@media screen and (max-width: 800px) {
+
+    #content-wrap {
+        padding-top: 80vw;
+        padding-bottom:30vw;
+    }
+    #top {
+        flex-direction: column;
+        height: 85vw;
+        margin: 0vw 0vw 2vw;
+    }
+    nav div {
+        flex-direction: column;
+        height: auto;
+    }
+    #navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 100%;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #ffd369;
+    }
+    #logo p{
+        font-size: 10vw;
+        margin-top: auto;
+        width: 100%;
+        color: #222831;
+        background-color: #eeeeee;
+    }
+    .menu-items {
+        font-size: 10vw;
+        margin: 2px;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    #gallery {
+        flex-flow: row wrap;
+    }
+    
+    #gallery a {
+        width: 35vw;
+        height: auto;
+        margin: 5%;
+    }
+    
+    #gallery img {
+        width: 35vw;
+    }
+
+    #footer {
+        width: 100vw;
+        height: auto;
+        font-size: 10vw;
+        justify-content: space-between;
+    }
+
+    #contact-me {
+        font-size: 7vw;
+    }
+
+    #social {
+        width: 30vw;
+    }
+    .fab {
+        font-size: 8vw;
+    }
+
+    #contact {
+        width: auto;
+    }
+    #contact p, #contact a{
+        font-size: 4vw;
+        margin: 10px;
+    }
+    .image {
+        width: 60vw;
+        padding: 10px;
+        border: 5px #eeeeee solid;   
+    }
+    
+}
+
+/* Media breakpoint for phone screens */
+@media screen and (max-width: 500px) {
+
+    #gallery {
+        flex-direction: column;
+    }
+    
+    #gallery a {
+        width: 60vw;
+        margin: 10%;
+    }
+    
+    #gallery img {
+        width: 60vw;
+        border-radius: 50%;
+    }    
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #social {
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    .fab {
+        font-size: 15vw;
+        margin: 10px;
+    }
+
+    #contact-me {
+        font-size: 9vw;
+        margin: 10px;
+    }
+
+    #contact p, #contact a{
+        font-size: 4vw;
+        margin: 10px;
+    }
+    .image {
+        width: 80vw;
+        padding: 10px;
+        border: 2px #eeeeee solid;   
+    }
+}
+
+
+
+
+
