@@ -26,7 +26,6 @@ body {
     height: 7vw;
     margin-bottom: 2vw;
     background-color: #222831;
-    border-bottom: 1px solid #ffd369;
 }
 
 nav div {
@@ -71,6 +70,8 @@ nav div {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #ffd369;
+    border-bottom: 1px solid #ffd369;
 }
 
 h1 {
@@ -215,7 +216,7 @@ h1:hover {
 
     #content-wrap {
         padding-top: 80vw;
-        padding-bottom:20vw;
+        padding-bottom:30vw;
     }
     #top {
         flex-direction: column;
@@ -299,66 +300,48 @@ h1:hover {
 
 /* Media breakpoint for phone screens */
 @media screen and (max-width: 500px) {
-    #content-wrap {
-        width: 100%;
-        padding-top: 80vw;
-        padding-bottom:20vw;
-    }
-    #top {
-        flex-direction: column;
-        height: 85vw;
-        margin: 0vw 0vw 2vw;
-    }
-    nav div {
-        flex-direction: column;
-        height: auto;
-        justify-content: flex-start;
-    }
-    #navigation {
-        display: flex;
-        flex-direction: column;
-    }
 
-    #logo {
-        width: 100%;
-        margin-bottom: 5px;
-        border-bottom: 2px solid #ffd369;
-    }
-    #logo p{
-        font-size: 10vw;
-        margin-top: auto;
-        width: 100%;
-        color: #222831;
-        background-color: #eeeeee;
-    }
-    .menu-items {
-        font-size: 10vw;
-        margin: 2px;
-    }
-
-    h1 {
-        font-size: 10vw;
-    }
     #gallery {
         flex-direction: column;
     }
     
     #gallery a {
         width: 60vw;
-        height: auto;
         margin: 10%;
     }
     
     #gallery img {
-        width: 20vw;
-    }
+        width: 60vw;
+        border-radius: 50%;
+    }    
+
     #footer {
-        height: auto;
-        font-size: 10vw;
+        flex-direction: column;
+    }
+
+    #social {
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    .fab {
+        font-size: 15vw;
+        margin: 10px;
     }
 
     #contact-me {
-        font-size: 6vw;
+        font-size: 9vw;
+        margin: 10px;
+    }
+
+    #contact p, #contact a{
+        font-size: 4vw;
+        margin: 10px;
+    }
+    .image {
+        width: 80vw;
+        padding: 10px;
+        border: 2px #eeeeee solid;   
     }
 }
 
