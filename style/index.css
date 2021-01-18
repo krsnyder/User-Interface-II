@@ -126,10 +126,6 @@ h1:hover {
     justify-content: space-between;
 }
 
-#projects img {
-    width: 35vw;
-}
-
 #projects div {
     margin: 2%;
 }
@@ -139,6 +135,7 @@ h1:hover {
     text-align: center;
 }
 .image {
+    width: 35vw;
     padding: 10px;
     border: 10px #eeeeee solid;   
 }
@@ -292,6 +289,12 @@ h1:hover {
         font-size: 4vw;
         margin: 10px;
     }
+    .image {
+        width: 60vw;
+        padding: 10px;
+        border: 5px #eeeeee solid;   
+    }
+    
 }
 
 /* Media breakpoint for phone screens */
